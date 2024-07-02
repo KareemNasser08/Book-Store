@@ -16,7 +16,7 @@ export class HomeLandingComponent {
       next: (res) => {
         console.log(res);
         this.allBooks.push(res.data);
-        console.log(this.allBooks[0]);
+        console.log(this.allBooks);
 
       },
       error: (err) => {

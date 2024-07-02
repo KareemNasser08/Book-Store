@@ -19,7 +19,8 @@ export class GlobalInterceptor implements HttpInterceptor {
     let newRequest = request.clone({
       url: request.url.includes('assets') ? request.url : baseUrl + request.url,
       setHeaders: {
-        'Authorization': `Bearer ${token}`
+        'Authorization': `Bearer ${token}`,
+        'language': 'en'
       }
     })
     return next.handle(newRequest);
