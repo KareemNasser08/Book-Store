@@ -1,0 +1,29 @@
+<section class="auth-layout">
+    <div class="container-fluid p-0 m-0 h-100 ">
+        <div class="row m-0 ">
+            <div class="col-md-6 p-0 m-0">
+                <div class="image-layout" >
+                    <img src="../../../../../assets/Images/Picture.png">
+                </div>
+            </div>
+
+            <div class="col-md-6 p-0 m-0 formLayoutContainer overflow-auto">
+                <div class="container m-0 p-0">
+                    <div class="row m-0">
+                        <div class="col-12 mt-5">
+                            <div class="image-form text-center" >
+                                <img src="../../../../../assets/Images/Logo (Stroke).png" 
+                                class="shadow-sm p-3 rounded-3" 
+                                routerLink="/auth/login" 
+                                role="button">
+                            </div>
+                        </div>
+                        <div class="col-8 mx-auto mt-4 ">
+                            <router-outlet></router-outlet>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

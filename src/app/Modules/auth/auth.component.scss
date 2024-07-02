@@ -1,0 +1,19 @@
+.auth-layout {
+    .container-fluid {
+        max-height: inherit;
+
+        .image-layout {
+            max-height: 100vh;
+
+            img {
+                max-height: inherit;
+                width: 100%;
+            }
+        }
+
+        .formLayoutContainer {
+            max-height: 100vh;
+        }
+    }
+
+}

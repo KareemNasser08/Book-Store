@@ -1,0 +1,15 @@
+.categories {
+
+    .container-fluid{
+        h6.fw-bolder::before{
+
+            content: '';
+            height: 0.15rem;
+            width: 2.10rem;
+            position: absolute;
+            left: -3%;
+            top: 40%;
+            background-color: red;
+        }
+    }
+}

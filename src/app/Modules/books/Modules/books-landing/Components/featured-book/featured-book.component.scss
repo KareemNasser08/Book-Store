@@ -1,0 +1,21 @@
+section {
+    background: linear-gradient(78.43deg, #FBEEEE -28.34%, #F7FFFE 89.92%);
+
+    .image-layout {
+        max-height: 100vh;
+
+        img {
+            max-height: inherit;
+            width: 100%;
+        }
+    }
+
+    .col-md-6 {
+        small {
+            border-top: #f44336 2px solid;
+        }
+        span {
+            color: #f44336;
+        }
+    }
+}
