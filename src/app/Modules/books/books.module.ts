@@ -14,11 +14,14 @@ import { SharedModule } from '../shared/shared.module';
     BooksComponent,
     HeaderComponent,
     FooterComponent,
+
   ],
   imports: [
     CommonModule,
     BooksRoutingModule,
     SharedModule
+  ],
+  exports:[
   ]
 })
 export class BooksModule { }

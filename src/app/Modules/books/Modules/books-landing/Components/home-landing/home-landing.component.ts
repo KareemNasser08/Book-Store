@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BooksService } from '../../Services/books.service';
-import { Book } from '../../Interfaces/book';
+import { Book, GetAllBooksApi } from '../../../../Interfaces/book';
 
 @Component({
   selector: 'app-home-landing',
@@ -9,31 +9,30 @@ import { Book } from '../../Interfaces/book';
 })
 export class HomeLandingComponent {
 
-  allBooks: Book[] = [];
+  // allBooks: Book[] = [];
+  // constructor(private _books: BooksService) { }
 
-  getAllBooks() {
-    this._books.getAllBooks().subscribe({
-      next: (res) => {
-        console.log(res);
-        this.allBooks.push(res.data);
-        console.log(this.allBooks);
+  // getAllBooks() {
+  //   this._books.getAllBooks().subscribe({
+  //     next: (res: GetAllBooksApi) => {
+  //       // console.log(res);
+  //       this.allBooks = res.data;
+  //       // console.log(this.allBooks);
 
-      },
-      error: (err) => {
-        console.log(err);
-      },
-      complete: () => {
-        console.log('completed request');
+  //     },
+  //     error: (err) => {
+  //       console.log(err);
+  //     },
+  //     complete: () => {
+  //       console.log('completed request');
+  //     }
+  //   })
+  // }
 
-
-      }
-    })
-  }
-
-  constructor(private _books: BooksService) { }
-  ngOnInit(): void {
-    this.getAllBooks();
-  }
+  
+  // ngOnInit(): void {
+  //   this.getAllBooks();
+  // }
 
 
 }

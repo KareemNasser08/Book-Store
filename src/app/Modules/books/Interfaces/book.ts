@@ -10,3 +10,12 @@ export interface Book {
     createdAt: string,
     __v: number
 }
+
+export interface GetAllBooksApi {
+    data: Book[];
+    hasNextPage: boolean;
+    hasPrevPage: boolean;
+    limit: number;
+    page: number;
+    total: number;
+}
